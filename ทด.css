@@ -1,0 +1,220 @@
+@import url("https://fonts.googleapis.com/css2?family=Mitr:wght@300;600&display=swap");
+  body {
+    background-color: #f1f1f1;
+    padding: 20px;
+    font-family: 'Mitr';
+  }
+  /* Center website */
+  .main {
+    max-width: 1000px;
+    margin: auto;
+  }
+  
+  h1 {
+    font-size: 50px;
+    word-break: break-all;
+    font-family: 'Mitr';
+  }
+
+  h3 {
+    font-size: 24px;
+    font-family: 'Mitr';
+  }
+  
+  .row {
+    margin: 8px -16px;
+  }
+  
+  /* Add padding BETWEEN each column (if you want) */
+  .row,
+  .row > .column {
+    padding: 8px;
+    font-family: 'Mitr';
+  }
+  
+  /* Create four equal columns that floats next to each other */
+  .column {
+    float: left;
+    width: 25%;
+  }
+  
+  /* Clear floats after rows */
+  .row:after {
+    content: "";
+    display: table;
+    clear: both;
+  }
+  
+  /* Content */
+  .content {
+    background-color: rgb(252, 134, 134);
+    padding: 10px;
+    font-family: 'Mitr';
+  }
+  .down {
+      background-color: rgb(236, 229, 160);
+      background-size: 50px; 
+      padding: 10px;
+      font-family: 'Mitr';
+  }
+  /* Responsive layout - makes a two column-layout instead of four columns */
+  @media screen and (max-width: 900px) {
+    .column {
+      width: 50%;
+      font-family: 'Mitr';
+    }
+  }
+  
+  /* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+  @media screen and (max-width: 600px) {
+    .column {
+      width: 100%;
+      font-family: 'Mitr';
+    }
+  }
+  li{
+    display: inline-block;
+    margin-left: 40px;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    position: relative;
+}
+
+.filter{
+  color: rgb(225, 255, 0);
+    text-decoration: none;
+}
+
+.filter:hover{
+  color: springgreen;
+    text-decoration: line-through;
+}
+
+.buttom{
+  position: relative;
+  display: inline-block;
+  border: 2px solid #f1f1f1;
+  padding: 10px 20px;
+  color: #f1f1f1;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.buttom:hover{
+  background-color: #f1f1f1;
+  color: black;
+}
+.container {
+  position: relative;
+  width: auto;
+}
+
+/* Make the image to responsive */
+.image {
+  width: 100%;
+  height: auto;
+}
+
+/* The overlay effect (full height and width) - lays on top of the container and over the image */
+.overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  background-image: url(hobb.jpg);
+  overflow: hidden;
+  width: 100%;
+  height: 100%;
+  transform: scale(0);
+  transition: .3s ease;
+  background-position: center;
+  opacity: 50%;
+}
+
+/* When you mouse over the container, the overlay text will "zoom" in display */
+.container:hover .overlay {
+  transform: scale(1);
+}
+
+/* Some text inside the overlay, which is positioned in the middle vertically and horizontally */
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  
+}
+
+body, html {
+  height: 100%;
+}
+
+* {
+  box-sizing: border-box;
+}
+
+.bg-image {
+  /* The image used */
+  background-image: url("ร้องเพลง.jpg");
+
+  /* Add the blur effect */
+  filter: blur(8px);
+  -webkit-filter: blur(8px);
+
+  /* Full height */
+  height: 50%;
+
+  /* Center and scale the image nicely */
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+/* Position text in the middle of the page/image */
+.bg-text {
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0, 0.4); /* Black w/opacity/see-through */
+  color: white;
+  font-weight: bold;
+  border: 3px solid #f1f1f1;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  z-index: 2;
+  width: 80%;
+  padding: 20px;
+  text-align: center;
+}
+.responsive {
+  width: 100%;
+  max-width: 1000px;
+  height: auto;
+}
+
+.bgimg {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url('/w3images/profile_girl.jpg');
+  min-height: 100%;
+}
+.buttom2{
+  position: relative;
+  display: inline-block;
+  border: 2px solid #000000;
+  padding: 10px 20px;
+  color: #000000;
+  text-decoration: none;
+  transition: 0.5s;
+}
+.buttom2:hover{
+  background-color: #000000;
+  color: rgb(255, 255, 255);
+}
+.container {
+  position: relative;
+  width: auto;
+}

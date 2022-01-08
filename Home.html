@@ -1,0 +1,181 @@
+<!DOCTYPE html>
+<html>
+<head>
+<title>MY PORTFOLIO</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Montserrat">
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+<link rel="stylesheet" href="bt.css">
+<link rel="stylesheet" href="ทด.css">
+<script>
+  // Open and close sidebar
+  function openNav() {
+    document.getElementById("mySidebar").style.width = "50%";
+    document.getElementById("mySidebar").style.display = "block";
+  }
+  
+  function closeNav() {
+    document.getElementById("mySidebar").style.display = "none";
+  }
+  </script>
+<style>
+* {
+  box-sizing: border-box;
+}
+
+body {
+  background : url(av9.gif);
+  background-attachment: fixed;
+  background-repeat: no-repeat;
+  background-size: cover;
+  padding: 20px;
+  font-family: 'Mitr';
+}
+
+/* Center website */
+.main {
+  max-width: 1000px;
+  margin: auto; 
+}
+
+h1 {
+  font-size: 50px;
+  word-break: break-all;
+}
+
+.row {
+  margin: 8px -16px;
+}
+
+/* Add padding BETWEEN each column */
+.row,
+.row > .column {
+  padding: 8px;
+}
+
+/* Create four equal columns that floats next to each other */
+.column {
+  float: left;
+  width: 25%;
+}
+
+/* Clear floats after rows */ 
+.row:after {
+  content: "";
+  display: table;
+  clear: both;
+}
+
+/* Content */
+.content {
+  padding: 10px;
+}
+
+/* Responsive layout - makes a two column-layout instead of four columns */
+@media screen and (max-width: 900px) {
+  .column {
+    width: 50%;
+  }
+}
+
+/* Responsive layout - makes the two columns stack on top of each other instead of next to each other */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+  }
+}
+</style>
+<head>  <nav class="w3-sidebar w3-black w3-animate-right w3-xxlarge" style="display:none;padding-top:150px;right:0;z-index:2" id="mySidebar">
+  <a href="javascript:void(0)" onclick="closeNav()" class="w3-button w3-black w3-xxxlarge w3-display-topright" style="padding:0 12px;">
+    <i class="fa fa-remove"></i>
+  </a>
+  <div class="w3-bar-block w3-center" style="font-family: Mitr;">
+    <a href="Home.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Home</a>
+    <a href="Profile.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Profile</a>
+    <a href="My hobby.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Hobby</a>
+    <a href="Activity.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Activity</a>
+    <a href="Certificate.html" class="w3-bar-item w3-button w3-text-grey w3-hover-black" onclick="closeNav()">Certificate</a>
+  </div>
+</nav>
+
+<!-- Menu icon to open sidebar -->
+<span class="w3-button w3-top w3-white w3-xxlarge w3-text-grey w3-hover-text-black" style="width:auto;right:0;" onclick="openNav()"><i class="fa fa-bars"></i></span>
+</head>
+</head>
+<body>
+
+<!-- MAIN (Center website) -->
+<div class="main">
+
+<center><h1 style="color: rgb(133, 5, 5);font-size: 72px;font-weight: bold;" >MY PORTFOLIO</h1></center>
+<hr>
+
+<!-- Portfolio Gallery Grid -->
+<div class="row">
+  <div class="column">
+    <div class="content">
+      <div class="container">
+      <img src="Profile.png" alt="Profile" style="width: 100%" class="image">
+    </div>
+    
+      <h3 style="font-weight: bold;">Profile</h3>
+      <p style="font-size: 14.5px;">มาทำความรู้จักกันก่อนนะครับ <br>สามารถคลิ๊กมาดูได้เลย!!!</p>
+      <center><a  href="Profile.html"  class="buttom">CLICK HERE
+    </a></nav></center>
+    </div>
+    </div>
+  <div class="column">
+    <div class="content">
+    <img src="67497333_936990993314719_2462238518106128384_n.jpg" alt="Hobby" style="width:100%">
+      <h3 style="font-weight: bold;">My Hobby</h3>
+      <p style="font-size: 14px;">ช่วงเวลาว่างผมมักจะหาสิ่งที่ผมชอบทำเสมอ สามารถคลิ๊กมาดูได้เลย!!!
+      </p>
+      <center><a  href="My hobby.html" class="buttom">CLICK HERE
+      </a></center>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="121980631_760369217853134_3485391121826353101_n.jpg" alt="Activity" style="width:100%">
+      <h3 style="font-weight: bold;">Activity</h3>
+      <p style="font-size: 14px;">เนื้อหาภายในนี้จะเป็นสิ่งที่ผมทำมาทั้งหมด ในช่วงมัธยมศึกษาปีที่ 4-6</p>
+      <center><a  href="Activity.html" class="buttom">CLICK HERE
+      </a></center>
+    </div>
+  </div>
+  <div class="column">
+    <div class="content">
+    <img src="certi.jpg" alt="Certificate" style="width:100%">
+      <h3 style="font-weight: bold;">My Certificate</h3>
+      <p  style="font-size: 15px;">เกียติบัตรทั้งหมด จากกิจกรรมทั้งหมด        สามารถคลิ๊กมาดูได้เลย!!!</p>
+      <center><a  href="Certificate.html" class="buttom">CLICK HERE
+      </a></center>
+    </div>
+  </div>
+  </div>
+<!-- END GRID -->
+</div>
+
+<div class="down" >
+  <img src="My life.jpg" alt="Bear" style="width:100%">
+  <h3 style="font-weight: bold;margin-top: 10px;margin-left: 40px;">Introduced my life</h3>
+  <p style="font-size: 18px;margin-left: 50px;">ในช่วงชีวิตของผมได้ผ่านช่วงเวลาทั้งสุขทุกข์เสร้าปนกันไป ในช่วงประถมเราจำได้ว่าไม่เคยทำงานได้เป็นชิ้นเป็นอัน พอขึ้นมามัธยมต้นก็เช่นเดียวกัน
+    แต่หลังจากที่ได้รู้จักกับคำว่าพยายามให้สุด <br>พอขึ้นมามัธยมปลายผมเลือกที่จะสุดกับทุกๆอย่าง เคยเป็นแค่สภา ก็แปรเปลี่ยนเป็นประธานในช่วงมัธยมปลาย
+    จากการลงแข่งขันเกมเป็นการจัดการแข่งขันเกมเพื่อให้น้องๆได้เข้ามาเล่น <br>และมีผู้ชมสนใจเป็นอย่างมาก จากที่เป็นรองหัวหน้าลูกเสือ
+    ได้มาเป็นผู้นำในการจัดกิจกรรมในโรงเรียนต่าง ทั้งโดนตำหนิจากอาจารย์เรื่องการทำงานบ้าง แต่ผมและเพื่อนๆในสภาก็ผ่านมาได้
+    <br>การเรียนนี้ก็ไม่น้อยหน้า เริ่มเรียนพิเศษครั้งแรกตอนม.5 การเรียนครั้งนั้นเหมือนการจุดไฟในตัว ผมเริ่มมั่นใจกับการทำสมการ การทำโจทย์ยาก
+    ถึงแม้จะผิดแต่เราก็ได้พยายาม และสิ่งนี้แหละ<br>ที่เป็นความทรงจำของช่วงชีวิตในตอนนี้และในอนาคตจะมีเรื่องที่คาดไม่ถึงมากมาย แต่เราก็พร้อมที่จะยอมรับ
+    และจะสู้ ให้สุดเหมือนที่สุดกับทุกๆอย่างค้รับ
+  </p>
+  <p></p>
+</div>
+
+<!-- END MAIN -->
+</div>
+  
+
+</body>
+</html>

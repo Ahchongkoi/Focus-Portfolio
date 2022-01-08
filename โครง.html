@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<title>โครงการวิศวะ</title>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Poppins">
+<link href="https://fonts.googleapis.com/css2?family=Mitr:wght@300;600&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="bt.css">
+<style>
+body,h1,h2,h3,h4,h5 {font-family: "Mitr", sans-serif}
+body {font-size:18px;
+background-image: url(av2.gif);
+background-repeat: no-repeat;
+background-attachment: fixed;
+background-size: cover;
+}
+.w3-half img{margin-bottom:-6px;margin-top:16px;opacity:0.8;cursor:pointer}
+.w3-half img:hover{opacity:1}
+</style>
+<body>
+
+<head>
+<center><h1 style="font-size: 72px;
+        font-weight: bold;">
+        โครงกาารติวเตรียมวิศวะ
+    </h1></center>
+</head>
+  
+  <!-- Photo grid (modal) -->
+  <div class="w3-row-padding">
+    <div class="w3-half">
+      <img src="โค1.png" style="width:100%" onclick="onClick(this)" alt="เข้าร่วมโครงกาารติวเตรียมวิศวะ">
+      <img src="โค4.png" style="width:100%" onclick="onClick(this)" alt="Workshop หุ่นยนต์อธิบายสิ่งต่างๆ ที่จำเป็นต้องใช้">
+      <img src="โค5.png" style="width:100%" onclick="onClick(this)" alt="Workshop หุ่นยนต์อธิบายสิ่งต่างๆ ที่จำเป็นต้องใช้">
+    </div>
+
+    <div class="w3-half">
+      <img src="โค2.png" style="width:100%" onclick="onClick(this)" alt="เข้าร่วมโครงกาารติวเตรียมวิศวะ">
+      <img src="โค4.png" style="width:100%" onclick="onClick(this)" alt="Workshop หุ่นยนต์อธิบายสิ่งต่างๆ ที่จำเป็นต้องใช้">
+      <img src="โค6.png" style="width:100%" onclick="onClick(this)" alt="แนะแนวการเรียนจากพี่ๆ ที่มีประสบการณ์">
+    </div>
+
+
+  <!-- Modal for full size images on click-->
+  <div id="modal01" class="w3-modal w3-black" style="padding-top:0" onclick="this.style.display='none'">
+    <span class="w3-button w3-black w3-xxlarge w3-display-topright">×</span>
+    <div class="w3-modal-content w3-animate-zoom w3-center w3-transparent w3-padding-64">
+      <img id="img01" class="w3-image">
+      <p id="caption"></p>
+    </div>
+  </div>
+
+
+
+<!-- End page content -->
+</div>
+
+<!-- W3.CSS Container -->
+<div class="w3-light-grey w3-container w3-padding-32" style="margin-top: 78px;padding-right:58px"><p class="w3-right">หมายเหตุ ภาพที่เห็นต่อไปนี้เป็นแค่ส่วนนึงของการทำกิจกรรมของผู้สร้างเว็ป ถ้ามีภาพกิจกรรมหล่นหายขออภัยมา ณ ที่นี้ด้วยครับ</p></div>
+
+<script>
+// Script to open and close sidebar
+function w3_open() {
+  document.getElementById("mySidebar").style.display = "block";
+  document.getElementById("myOverlay").style.display = "block";
+}
+ 
+function w3_close() {
+  document.getElementById("mySidebar").style.display = "none";
+  document.getElementById("myOverlay").style.display = "none";
+}
+
+// Modal Image Gallery
+function onClick(element) {
+  document.getElementById("img01").src = element.src;
+  document.getElementById("modal01").style.display = "block";
+  var captionText = document.getElementById("caption");
+  captionText.innerHTML = element.alt;
+}
+</script>
+
+</body>
+</html>
